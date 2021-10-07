@@ -27,14 +27,14 @@ import java.util.logging.Logger;
  *
  * @author gaemil
  */
-public class Cifrar extends javax.swing.JFrame {
+public class Cifrado extends javax.swing.JFrame {
     
     private File arch;
 
     /**
      * Creates new form Main
      */
-    public Cifrar() {
+    public Cifrado() {
         initComponents();
         this.setLocationRelativeTo(null);
         this.setResizable(false);
@@ -72,7 +72,7 @@ public class Cifrar extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setText("Documento a cifrar:");
+        jLabel3.setText("Documento a Cifrado:");
 
         jButton1.setText("Seleccionar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -81,7 +81,7 @@ public class Cifrar extends javax.swing.JFrame {
             }
         });
 
-        jMenu1.setText("Descifrar");
+        jMenu1.setText("DesCifrado");
         jMenu1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jMenu1MouseClicked(evt);
@@ -141,14 +141,14 @@ public class Cifrar extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
-        Descifrar obj = new Descifrar();
+        DesCifrado obj = new DesCifrado();
         obj.setVisible(true);
         obj.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_jMenu1ActionPerformed
 
     private void jMenu1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu1MouseClicked
-        Descifrar obj = new Descifrar();
+        DesCifrado obj = new DesCifrado();
         obj.setVisible(true);
         obj.setLocationRelativeTo(null);
         this.dispose();
@@ -196,9 +196,9 @@ public class Cifrar extends javax.swing.JFrame {
                 out.close();
 
             } catch (NoSuchAlgorithmException | NoSuchPaddingException | InvalidKeyException | IOException | IllegalBlockSizeException | BadPaddingException ex) {
-                Logger.getLogger(Cifrar.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Cifrado.class.getName()).log(Level.SEVERE, null, ex);
             } catch (InvalidKeySpecException ex) {
-                Logger.getLogger(Cifrar.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Cifrado.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -220,13 +220,13 @@ public class Cifrar extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Cifrar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Cifrado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Cifrar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Cifrado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Cifrar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Cifrado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Cifrar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Cifrado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
@@ -236,7 +236,7 @@ public class Cifrar extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Cifrar().setVisible(true);
+                new Cifrado().setVisible(true);
                 
             }
         });
